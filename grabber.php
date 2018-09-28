@@ -7,6 +7,7 @@
 	usage:
 		php grabber.php
 */
+// Banner starts here!
 echo "+-+-+-+-+-+-+ +-+-+-+-+-+-+-+"."\n";
 echo "| 3|x|p|1|r|3| |P|r|1|n|c|3 |"."\n";
 echo "+-+-+-+-+-+-+ +-+-+-+-+-+-+-+"."\n";;
@@ -15,34 +16,29 @@ echo "|Mass   |Reverse|   |grabber|"."\n";
 echo "|~~ Jokr Haxor|Saiyan Haxor!|"."\n";
 echo "+-+-+-+-+-+ +-+-+-+-+-+-+-+-+"."\n";
 echo ""."\n";
-$open=fopen("list.txt","r");
-while(!feof($open)) {
+$open=fopen("list.txt","r"); //opening main list!
+while(!feof($open)) { //will run untill the list is over!
   $opening=fgets($open);
   $opening=trim($opening,"
   ");
-  $length=strlen($opening);
-  $length=$length-1;
-  if (strpos($opening,"http://")==0) {
+  if (strpos($opening,"http://")==0) { //removes http://
     $opening=str_replace("http://","",$opening);
   }
-  if (strpos($opening,"https://")==0) {
+  if (strpos($opening,"https://")==0) { //removes https://
     $opening=str_replace("https://","",$opening);
   }
-  if (strpos($opening,"/")==$length) {
-    $opening=str_replace("/","",$opening);
-  }
-  $api="http://api.hackertarget.com/reverseiplookup/?q=$opening";
+  $api="http://api.hackertarget.com/reverseiplookup/?q=$opening"; //generating link
   $domains=file_get_contents($api);
-  $filegen=fopen("grabbed.txt","a");
-  fwrite($filegen,$domains);
-  $open_list=fopen("grabbed.txt","r");
-  $count=0;
-  while (!feof($open_list)) {
+  $filegen=fopen("grabbed.txt","a"); //generating output file!
+  fwrite($filegen,$domains); //Writting grabbed domains!
+  $open_list=fopen("grabbed.txt","r"); //Opens output file!
+  $count=0; //sets domain count value!
+  while (!feof($open_list)) { //loop for counting domains amount!
     $opening_list=fgets($open_list);
     $count++;
   }
   fclose($open_list);
-  echo $opening."\n"."Current Domain Count: ".$count."\n";
+  echo $opening."\n"."Current Domain Count: ".$count."\n"; //prints output!
 }
 fclose($open);
 ?>
