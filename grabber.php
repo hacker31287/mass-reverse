@@ -5,7 +5,7 @@
 	Public Script No: 02
 	Greetz: Jokr Haxor, Saiyan Haxor!
 	usage:
-			wrong: php grabber.php
+		php grabber.php
 */
 echo "+-+-+-+-+-+-+ +-+-+-+-+-+-+-+"."\n";
 echo "| 3|x|p|1|r|3| |P|r|1|n|c|3 |"."\n";
