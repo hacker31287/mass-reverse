@@ -1,6 +1,6 @@
 <?php
 /*
-  Author: 3xp1r3 Pr1nc3
+  	Author: 3xp1r3 Pr1nc3
 	Date: 9/28/2018
 	Public Script No: 02
 	Greetz: Jokr Haxor, Saiyan Haxor!
