@@ -12,7 +12,7 @@
 echo "+-+-+-+-+-+-+ +-+-+-+-+-+-+-+"."\n";
 echo "| 3|x|p|1|r|3| |P|r|1|n|c|3 |"."\n";
 echo "+-+-+-+-+-+-+ +-+-+-+-+-+-+-+"."\n";;
-echo "|  D|a|t|e   :    27/09/18  |"."\n";
+echo "|  D|a|t|e   :    28/09/18  |"."\n";
 echo "|Mass   |Reverse|   |grabber|"."\n";
 echo "|~~ Jokr Haxor|Saiyan Haxor!|"."\n";
 echo "+-+-+-+-+-+ +-+-+-+-+-+-+-+-+"."\n";
