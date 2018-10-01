@@ -3,7 +3,7 @@
   	Author: 3xp1r3 Pr1nc3
 	Date: 9/28/2018
 	Public Script No: 02
-	Script Name: Mass Reverse Grabber
+	Script Name: 3x Mass Reverse Grabber
 	Greetz: Jokr Haxor, Saiyan Haxor!
 	usage:
 		php grabber.php
