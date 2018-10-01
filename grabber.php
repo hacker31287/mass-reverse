@@ -42,7 +42,4 @@ while(!feof($open)) { //will run untill the list is over!
   echo $opening."\n"."Current Domain Count: ".$count."\n"; //prints output!
 }
 fclose($open);
-$lines=file("grabbed.txt");
-$lines=array_unique($lines);
-file_put_contents("grabbed.txt",implode($lines));
 ?>
