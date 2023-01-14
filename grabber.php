@@ -28,7 +28,7 @@ while(!feof($open)) { //will run untill the list is over!
   if (strpos($opening,"https://")==0) { //removes https://
     $opening=str_replace("https://","",$opening);
   }
-  $api="http://api.hackertarget.com/reverseiplookup/?q=$opening"; //generating link
+  $api="http://premiumbins.tk/reverse/?ip=$opening"; //generating link
   $domains=file_get_contents($api);
   $filegen=fopen("grabbed.txt","a"); //generating output file!
   fwrite($filegen,$domains); //Writting grabbed domains!
